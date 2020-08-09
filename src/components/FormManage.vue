@@ -8,6 +8,7 @@
     <div class="div-1">
       <el-row>
         <el-col :span="2">
+<<<<<<< HEAD
           <el-upload
             class="upload-demo"
             ref="upload"
@@ -22,6 +23,12 @@
         </el-col>
         <el-col :span="2">
           <el-button class="button-1" type="primary" @click="exportExcel">导出表格</el-button>
+=======
+          <el-button class="button-1" type="primary">上传表格</el-button>
+        </el-col>
+        <el-col :span="2">
+          <el-button class="button-1" type="primary">导出表格</el-button>
+>>>>>>> d4c5c95c7fe519cc519869a73cb3c667a0d5e771
         </el-col>
       </el-row>
       <el-row class="row-2">
@@ -31,6 +38,7 @@
             class="table-1"
             :header-cell-style="headerCellStyle">
             <el-table-column
+<<<<<<< HEAD
               prop="id"
               label="序号">
             </el-table-column>
@@ -60,6 +68,37 @@
             </el-table-column>
             <el-table-column
               prop="bankAccount"
+=======
+              prop=""
+              label="序号">
+            </el-table-column>
+            <el-table-column
+              prop=""
+              label="员工编号">
+            </el-table-column>
+            <el-table-column
+              prop=""
+              label="姓名">
+            </el-table-column>
+            <el-table-column
+              prop=""
+              label="班组">
+            </el-table-column>
+            <el-table-column
+              prop=""
+              label="职位">
+            </el-table-column>
+            <el-table-column
+              prop=""
+              label="身份证">
+            </el-table-column>
+            <el-table-column
+              prop=""
+              label="开户行">
+            </el-table-column>
+            <el-table-column
+              prop=""
+>>>>>>> d4c5c95c7fe519cc519869a73cb3c667a0d5e771
               label="银行账户">
             </el-table-column>
             <el-table-column
@@ -111,13 +150,17 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import FileSaver from 'file-saver'
 import XLSX from 'xlsx'
 
+=======
+>>>>>>> d4c5c95c7fe519cc519869a73cb3c667a0d5e771
 export default {
   name: 'FormManage',
   data () {
     return {
+<<<<<<< HEAD
       tableData: [{
         id: 1,
         employeeId: '10001',
@@ -128,6 +171,9 @@ export default {
         bank: '中行',
         bankAccount: '62226'
       }],
+=======
+      tableData: [],
+>>>>>>> d4c5c95c7fe519cc519869a73cb3c667a0d5e771
       dialogFormVisible: false,
       formLabelWidth: '120px',
       headerCellStyle: {background: '#eef1f6', color: '#606266'},
@@ -170,6 +216,7 @@ export default {
     }
   },
   methods: {
+<<<<<<< HEAD
     //  uploadUrl: function() {
     //   return (
     //     "/fanxing/import/batchInsertShops" +
@@ -223,6 +270,8 @@ export default {
       return wbout
     },
 
+=======
+>>>>>>> d4c5c95c7fe519cc519869a73cb3c667a0d5e771
     handleEdit (index, row) {
       this.dialogFormVisible = true
     },
